@@ -12,16 +12,17 @@
             font-family: 'Arial', sans-serif;
         }
 
-        /* Blue and black glow effect for the logo */
+        /* White glowing effect for the logo */
         .logo {
             width: 200px; /* Adjust width as needed */
             height: auto;
-            filter: drop-shadow(0 0 5px blue) drop-shadow(0 0 10px black); /* Blue glow with black shadow */
+            border-radius: 15px; /* Add rounded corners */
+            filter: drop-shadow(0 0 10px white) drop-shadow(0 0 20px rgba(255, 255, 255, 0.5)); /* White glow */
             transition: filter 0.3s;
         }
 
         .logo:hover {
-            filter: drop-shadow(0 0 15px blue) drop-shadow(0 0 20px black); /* More intense glow on hover */
+            filter: drop-shadow(0 0 20px white) drop-shadow(0 0 30px rgba(255, 255, 255, 0.5)); /* More intense glow on hover */
         }
 
         /* Pink aesthetic button */
