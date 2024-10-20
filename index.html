@@ -12,57 +12,50 @@
             font-family: 'Arial', sans-serif;
         }
 
-        /* White glowing effect for the logo */
+        /* Logo styling without glow */
         .logo {
-            width: 200px; /* Adjust width as needed */
+            width: 200px;
             height: auto;
-            border-radius: 15px; /* Add rounded corners */
-            filter: drop-shadow(0 0 10px white) drop-shadow(0 0 20px rgba(255, 255, 255, 0.5)); /* White glow */
-            transition: filter 0.3s;
+            border-radius: 15px;
         }
 
-        .logo:hover {
-            filter: drop-shadow(0 0 20px white) drop-shadow(0 0 30px rgba(255, 255, 255, 0.5)); /* More intense glow on hover */
+        /* Gradient text for Meta Go */
+        .meta-go-text {
+            background: linear-gradient(90deg, red, black);
+            -webkit-background-clip: text;
+            color: transparent; /* This makes the gradient appear as the text color */
         }
 
-        /* Pink aesthetic button */
+        /* Dark pink button */
         .pink-button {
-            background: linear-gradient(90deg, rgba(255, 105, 180, 1) 0%, rgba(255, 0, 128, 1) 100%);
-            box-shadow: 0 0 10px rgba(255, 105, 180, 1), 0 0 20px rgba(255, 0, 128, 1);
-            transition: box-shadow 0.3s;
-            padding: 10px 20px; /* Added padding for better button size */
-            border-radius: 9999px; /* Fully rounded */
+            background-color: #c71585; /* Dark pink */
+            transition: background 0.3s ease;
+            padding: 10px 20px;
+            border-radius: 9999px;
             text-align: center;
             display: inline-block;
-            color: white; /* Button text color */
+            color: white;
             font-weight: bold;
         }
 
         .pink-button:hover {
-            box-shadow: 0 0 20px rgba(255, 105, 180, 1), 0 0 30px rgba(255, 0, 128, 1);
+            background-color: #a5006b; /* Darker pink on hover */
         }
 
-        /* Blue aesthetic button */
+        /* Dark blue button */
         .blue-button {
-            background: linear-gradient(90deg, rgba(0, 102, 255, 1) 0%, rgba(0, 51, 255, 1) 100%);
-            box-shadow: 0 0 10px rgba(0, 102, 255, 1), 0 0 20px rgba(0, 51, 255, 1);
-            transition: box-shadow 0.3s;
-            padding: 10px 20px; /* Added padding for better button size */
-            border-radius: 9999px; /* Fully rounded */
+            background-color: #00008b; /* Dark blue */
+            transition: background 0.3s ease;
+            padding: 10px 20px;
+            border-radius: 9999px;
             text-align: center;
             display: inline-block;
-            color: white; /* Button text color */
+            color: white;
             font-weight: bold;
         }
 
         .blue-button:hover {
-            box-shadow: 0 0 20px rgba(0, 102, 255, 1), 0 0 30px rgba(0, 51, 255, 1);
-        }
-
-        /* Red glow effect for the Meta Go text */
-        .meta-go-text {
-            color: red; /* Red color */
-            text-shadow: 0 0 5px red, 0 0 10px darkred; /* Red glow effect */
+            background-color: #00006f; /* Darker blue on hover */
         }
     </style>
 </head>
@@ -72,16 +65,16 @@
     </header>
     <main class="flex flex-col items-center text-center mt-8">
         <div class="mt-4">
-            <img alt="Logo" class="logo" src="https://i.imghippo.com/files/h2TuW1729272228.png"/> <!-- Updated Logo URL -->
+            <img alt="Logo" class="logo" src="https://i.imghippo.com/files/h2TuW1729272228.png"/>
         </div>
-        <h1 class="text-4xl font-bold mt-4 meta-go-text">Meta Go</h1> <!-- Added red glow effect -->
+        <h1 class="text-4xl font-bold mt-4 meta-go-text">Meta Go</h1>
         <h2 class="text-2xl font-bold mt-2 text-gray-300">Private Server</h2>
-        <p class="text-lg mt-2 text-gray-400">The ultimate Blockman GO experience</p>
+        <p class="text-lg mt-2 text-gray-400">A new level of Blockman GO fun awaits.</p>
         <div class="flex space-x-4 mt-4">
-            <a href="https://download-metago.vercel.app/" class="pink-button">Download now</a> <!-- Updated button for download -->
-            <a href="https://discord.gg/nPTBauYW5M" class="blue-button" target="_blank">Join Discord</a> <!-- Updated button for Discord with link -->
+            <a href="https://download-metago.vercel.app/" class="pink-button">Download now</a>
+            <a href="https://discord.gg/nPTBauYW5M" class="blue-button" target="_blank">Join Discord</a>
         </div>
-        <p class="text-sm mt-4 text-gray-400 px-4">Meta Go is a project founded by three people: Wayne, Marine, and Foondu in the gaming community.</p>
+        <p class="text-sm mt-4 text-gray-400 px-4">Meta Go, founded by Wayne, Marine, and Foondu—built for those who want to take gaming to the next level. Welcome to the team!</p>
     </main>
 </body>
-    </html>
+</html>
