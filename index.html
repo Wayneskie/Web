@@ -51,31 +51,52 @@
             background-color: #00006f;
         }
 
-        /* Countdown styling */
+        /* Countdown styling with gradient and animation */
         .countdown {
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-top: 20px;
+            font-weight: bold;
+            background: linear-gradient(90deg, black, red);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
         }
     </style>
     <script>
         function startCountdown() {
-            const countdownDate = new Date('October 31, 2024 23:59:59').getTime();
+            // Set the date we're counting down to (October 31st, 23:59:59)
+            const countdownDate = new Date(new Date().getFullYear(), 9, 31, 23, 59, 59).getTime(); 
 
             const countdownFunction = setInterval(function () {
                 const now = new Date().getTime();
                 const distance = countdownDate - now;
 
+                // Calculate time remaining
                 const days = Math.floor(distance / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+                // Display the result
                 document.getElementById('countdown').innerHTML = days + 'd ' + hours + 'h '
                     + minutes + 'm ' + seconds + 's ';
 
+                // If the countdown is over, show a message
                 if (distance < 0) {
                     clearInterval(countdownFunction);
-                    document.getElementById('countdown').innerHTML = 'EXPIRED';
+                    document.getElementById('countdown').innerHTML = 'Countdown Ended';
                 }
             }, 1000);
         }
