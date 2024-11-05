@@ -1,2 +1,63 @@
-<h2>Im Wayne</h2>
-<a>idk</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 30px;
+            border-radius: 12px;
+            background-color: #1a1a1a;
+            box-shadow: 0 4px 15px rgba(0, 150, 255, 0.5);
+            transition: transform 0.3s ease;
+        }
+        .container:hover {
+            transform: scale(1.03);
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin: 0.2em 0;
+            color: #0096FF;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #cccccc;
+        }
+
+        p:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Me</h1>
+        <p>Hello! I'm a passionate developer and designer. I bring ideas to life by blending creativity with technical expertise.</p>
+    </div>
+</body>
+</html>
